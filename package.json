@@ -1,0 +1,38 @@
+{
+  "name": "audio-analyser-cli",
+  "version": "1.0.1",
+  "description": "The frequency or waveform data of audio analyser in command based on Puppeteer.js",
+  "scripts": {
+    "test": "ava test/**/*.test.js --serial",
+    "coverage": "nyc npm test report"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "audio-analyse": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inarol/audio-analyser-cli.git"
+  },
+  "keywords": [
+    "analyser",
+    "audio"
+  ],
+  "author": "narol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inarol/audio-analyser-cli/issues"
+  },
+  "homepage": "https://github.com/inarol/audio-analyser-cli#readme",
+  "dependencies": {
+    "cli-color": "^1.4.0",
+    "puppeteer": "^1.11.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "ava": "^1.1.0",
+    "command-line-test": "^1.0.10",
+    "coveralls": "^3.0.2",
+    "nyc": "^13.1.0"
+  }
+}
